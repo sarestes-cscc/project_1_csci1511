@@ -12,8 +12,10 @@
 
 # Have a discount system for seniors and kids using if statements
 
-# Use a while loop to print the names of the current 
+# Use a for loop to print the names of the current 
 #   inventory by genre
+
+# Use a while loop to show if store is open (while there is inventory)
 
 # Include user input
 
