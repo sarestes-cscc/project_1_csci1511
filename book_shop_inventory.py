@@ -27,3 +27,10 @@ current_inventory = [
     "mexican gothic", "jane eyre", "frankenstein", 
     "dracula"
 ]
+
+print(f"\nWelcome to the book shop! Please take a look at "
+      "our inventory:")
+
+for book in current_inventory:
+    print(book.title())
+
