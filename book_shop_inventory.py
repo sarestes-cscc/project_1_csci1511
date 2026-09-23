@@ -38,3 +38,9 @@ current_inventory = {
     ],
 }
 
+while current_inventory:
+    print(f"\nStore is open! Please take a look at our inventory:")
+    for genre, book in current_inventory.items():
+        print(f"{genre.title()}:")
+        print(f"{book.title()}")
+
