@@ -26,6 +26,7 @@ current_inventory = [
     "dracula"
 ]
 
+
 print(f"\nWelcome to the book shop! Please take a look at "
       "our inventory:")
 
@@ -35,6 +36,8 @@ for book in current_inventory:
 customer_order = []
 ordering_book = True
 
+
+# Customer ordering system
 print(f"\nPlease input the books you would like to buy, one at a time.")
 print("Enter 'quit' when you are done: ")
 
@@ -49,3 +52,24 @@ while ordering_book:
 
         for order in customer_order:
             print(order.title())
+
+
+# Calculating order total
+order_total = 0
+
+for order in customer_order:
+    order_total += 25
+
+# Calculating discount
+user_age = input(f"\nPlease enter your age: ")
+user_age = int(user_age)
+
+if user_age <= 12:
+    order_total -= 10
+if user_age >= 65:
+    order_total -= 5
+
+
+print(f"\n Your order total is ${order_total}.")
+print("\nThank you! Please come again.")
+
