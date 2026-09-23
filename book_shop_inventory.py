@@ -15,22 +15,17 @@
 # Use a for loop to print the names of the current 
 #   inventory by genre
 
-# Use a while loop to show if store is open (while there is inventory)
+# Use a while loop to update list
 
 # Include user input
 
-current_inventory = {
-    "isabel canas": "vampires of el norte", 
-    "ariel lawhorn": "the pirate queen",
-    "freida mcfadden": "the witch",
-    "shirley jackson": "the haunting of hill house", 
-    "silvia moreno-garcia": "mexican gothic", 
-    "mary shelley": "frankenstein", 
-    "bram stoker": "dracula"
-}
+current_inventory = [
+    "vampires of el norte", "the pirate queen",
+    "the witch", "the haunting of hill house", 
+    "mexican gothic", "frankenstein", 
+    "dracula"
+]
 
 print(f"\nWelcome to the book shop! Please take a look at "
       "our inventory:")
-
-
 
