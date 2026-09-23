@@ -44,16 +44,20 @@ print("Enter 'quit' when you are done: ")
 while ordering_book:
     book_choice = input("Book name: ")
     book_choice = book_choice.lower()
-    customer_order.append(book_choice)
-    current_inventory.remove(book_choice)
 
-    if book_choice == 'quit':
+    if book_choice in current_inventory:
+        customer_order.append(book_choice)
+        current_inventory.remove(book_choice)
+
+    elif book_choice == 'quit':
         ordering_book = False
-        customer_order.remove("quit")
         print("\nThe following books have been added to your cart:")
 
         for order in customer_order:
             print(order.title())
+
+    else:
+        print(f"\nSorry, we don't have that book. Please enter a book from our inventory.")
 
 
 # Calculating order total
@@ -75,7 +79,9 @@ elif user_age >= 65:
 else:
     print(f"\nYour order total is ${order_total}.")
 
-print()
+
+
+
 
 # Adding books to inventory from book delivery
 
