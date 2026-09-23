@@ -35,9 +35,11 @@ for book in current_inventory:
 customer_order = []
 ordering_book = True
 
+print(f"\nPlease input the books you would like to buy, one at a time.")
+print("Enter 'quit' when you are done: ")
+
 while ordering_book:
-    print(f"\nPlease input the books you would like to buy.")
-    book_choice = input("Enter 'quit' when you are done: ")
+    book_choice = input("Book name: ")
     customer_order.append(book_choice)
 
     if book_choice == 'quit':
