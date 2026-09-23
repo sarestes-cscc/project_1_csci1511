@@ -19,28 +19,11 @@
 
 # Include user input
 
-current_inventory = {
-    "fantasy": [
-        "vampires of el norte", "the pirate queen",
-        "the witch"
-    ],
-    "mystery": [
-        "the thursday murder club", "gone girl",
-        "the silent patient"
-    ],
-    "horror": [
-        "the haunting of hill house", "the shining",
-        "mexican gothic"
-    ],
-    "classic": [
-        "jane eyre", "frankenstein",
-        "dracula"
-    ],
-}
-
-while current_inventory:
-    print(f"\nStore is open! Please take a look at our inventory:")
-    for genre, book in current_inventory.items():
-        print(f"{genre.title()}:")
-        print(f"{book.title()}")
-
+current_inventory = [
+    "vampires of el norte", "the pirate queen",
+    "the witch", "the thursday murder club", 
+    "gone girl", "the silent patient", 
+    "the haunting of hill house", "the shining", 
+    "mexican gothic", "jane eyre", "frankenstein", 
+    "dracula"
+]
