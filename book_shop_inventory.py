@@ -19,18 +19,18 @@
 
 # Include user input
 
-current_inventory = [
-    "vampires of el norte", "the pirate queen",
-    "the witch", "the thursday murder club", 
-    "gone girl", "the silent patient", 
-    "the haunting of hill house", "the shining", 
-    "mexican gothic", "jane eyre", "frankenstein", 
-    "dracula"
-]
+current_inventory = {
+    "isabel canas": "vampires of el norte", 
+    "ariel lawhorn": "the pirate queen",
+    "freida mcfadden": "the witch",
+    "shirley jackson": "the haunting of hill house", 
+    "silvia moreno-garcia": "mexican gothic", 
+    "mary shelley": "frankenstein", 
+    "bram stoker": "dracula"
+}
 
 print(f"\nWelcome to the book shop! Please take a look at "
       "our inventory:")
 
-for book in current_inventory:
-    print(book.title())
+
 
