@@ -66,10 +66,10 @@ user_age = int(user_age)
 
 if user_age <= 12:
     order_total -= 10
-if user_age >= 65:
+    print(f"\nYou got $10 off! Your order total is ${order_total}.")
+elif user_age >= 65:
     order_total -= 5
-
-
-print(f"\n Your order total is ${order_total}.")
-print("\nThank you! Please come again.")
+    print(f"\nYou got $5 off! Your order total is ${order_total}.")
+else:
+    print(f"\nYour order total is ${order_total}.")
 
