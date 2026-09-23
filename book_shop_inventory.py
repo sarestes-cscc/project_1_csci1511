@@ -43,7 +43,9 @@ print("Enter 'quit' when you are done: ")
 
 while ordering_book:
     book_choice = input("Book name: ")
+    book_choice = book_choice.lower()
     customer_order.append(book_choice)
+    current_inventory.remove(book_choice)
 
     if book_choice == 'quit':
         ordering_book = False
@@ -72,4 +74,15 @@ elif user_age >= 65:
     print(f"\nYou got $5 off! Your order total is ${order_total}.")
 else:
     print(f"\nYour order total is ${order_total}.")
+
+print()
+
+# Adding books to inventory from book delivery
+
+print(f"\nBeep beep! Book delivery incoming.")
+
+book_deliver = [
+    "an ember in the ashes", "the last hour of gann",
+    "we burned so bright"
+]
 
