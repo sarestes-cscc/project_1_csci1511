@@ -9,6 +9,15 @@ current_inventory = [
     "dracula"
 ]
 
+book_price = {
+    "vampires of el norte": 15,
+    "the pirate queen": 20,
+    "the witch": 30,
+    "the haunting of hill house": 20,
+    "mexican gothic": 20,
+    "frankenstein": 10,
+    "dracula": 30
+}
 
 print(f"\nWelcome to the book shop! Please take a look at "
       "our inventory:")
@@ -47,7 +56,7 @@ while ordering_book:
 order_total = 0
 
 for order in customer_order:
-    order_total += 25
+    order_total += book_price[order]
 
 # Calculating discount
 user_age = input(f"\nPlease enter your age: ")
@@ -61,17 +70,4 @@ elif user_age >= 65:
     print(f"\nYou got $5 off! Your order total is ${order_total}.")
 else:
     print(f"\nYour order total is ${order_total}.")
-
-
-
-
-
-# Adding books to inventory from book delivery
-
-print(f"\nBeep beep! Book delivery incoming.")
-
-book_deliver = [
-    "an ember in the ashes", "the last hour of gann",
-    "we burned so bright"
-]
 
