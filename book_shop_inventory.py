@@ -74,3 +74,4 @@ elif user_age >= 65:
 else:
     print(f"\nYour order total is ${order_total}.")
 
+print("\nThanks! Your order is complete.")
