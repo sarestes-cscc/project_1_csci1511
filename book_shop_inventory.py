@@ -1,7 +1,7 @@
 """
 Book Shop Ordering System
 Sarah Estes
-To update an inventory list after an order is placed and give final cost
+Customer can add books to car and then receive their total cost
 9/23/2026
 """
 
