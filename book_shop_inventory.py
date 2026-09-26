@@ -1,7 +1,7 @@
 """
 Book Shop Ordering System
 Sarah Estes
-Customer can add books to car and then receive their total cost
+Customer can add books to cart and then receive their total cost
 9/23/2026
 """
 
