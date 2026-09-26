@@ -1,3 +1,5 @@
-# project 1 CSCI 1511 files
+# Video Link: https://youtu.be/6E_GMetfF2w
 
-# book shop ordering system
+# Project 1 CSCI 1511 file
+# Book Shop Ordering System
+# Sarah Estes
