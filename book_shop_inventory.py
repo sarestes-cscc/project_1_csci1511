@@ -31,7 +31,6 @@ for book in current_inventory:
 customer_order = []
 ordering_book = True
 
-
 # Customer ordering system
 print(f"\nPlease input the books you would like to buy, one at a time.")
 print("Enter 'quit' when you are done: ")
@@ -53,7 +52,6 @@ while ordering_book:
 
     else:
         print(f"\nSorry, we don't have that book. Please enter a book from our inventory.")
-
 
 # Calculating order total
 order_total = 0
